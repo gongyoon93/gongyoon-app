@@ -10,6 +10,7 @@ import Input3 from "./pages/Input3";
 import UserList from "./pages/UserList";
 import Time from "./pages/Time";
 import Ref from "./pages/Ref";
+import Ref2 from "./pages/Ref2";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Link to="/counter">Counter</Link> | <Link to="/input">Input</Link> |{" "}
         <Link to="/input2">Input2</Link> | <Link to="/input3">Input3</Link> | |{" "}
         <Link to="/list">UserList</Link> | <Link to="/time">Time</Link> |{" "}
-        <Link to="/ref">Ref</Link>
+        <Link to="/ref">Ref</Link> | <Link to="/Ref2">Ref2</Link> |{" "}
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -31,6 +32,7 @@ function App() {
         <Route path="/list" element={<UserList />} />
         <Route path="/time" element={<Time />} />
         <Route path="/ref" element={<Ref />} />
+        <Route path="/ref2" element={<Ref2 />} />
       </Routes>
     </div>
   );

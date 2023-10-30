@@ -40,3 +40,7 @@ const Input2 = () => {
 };
 
 export default Input2;
+// useState
+// const [names, setNames] = useState(["사과", "오렌지"]) : useState는 state와 setState를 배열로 리턴
+// setState((prevState) => {return [input, ...prevState]}); : setState함수 안에 callback 함수 사용시 prevState를 인자로 사용 가능
+// useState(() =>{"a","b"}); : useState 초기값에 callback 함수 사용시 최초 로딩시에만 초기값 설정 또는 함수 실행
