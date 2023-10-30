@@ -8,7 +8,6 @@ const Input3 = () => {
   const [names, setNames] = useState(() => {
     return ["홍길동", "김민수"];
   });
-
   const uploadName = () => {
     setNames((prevState) => {
       return [input, ...prevState];
