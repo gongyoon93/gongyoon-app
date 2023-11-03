@@ -11,11 +11,12 @@ import UserList from "../pages/UserList";
 import Time from "../pages/Time";
 import Ref from "../pages/Ref";
 import Ref2 from "../pages/Ref2";
+import Calculate from "../pages/Calculate";
+import Memo from "../pages/Memo";
 import { ThemeContext } from "../context/ThemeContext";
 
 const Content = () => {
   const { isDark } = useContext(ThemeContext);
-  console.log(isDark);
 
   return (
     <div
@@ -31,6 +32,7 @@ const Content = () => {
         <Link to="/input2">Input2</Link> | <Link to="/input3">Input3</Link> | |{" "}
         <Link to="/list">UserList</Link> | <Link to="/time">Time</Link> |{" "}
         <Link to="/ref">Ref</Link> | <Link to="/Ref2">Ref2</Link> |{" "}
+        <Link to="/calculate">Calculate</Link> | <Link to="/Memo">Memo</Link>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -43,6 +45,8 @@ const Content = () => {
         <Route path="/time" element={<Time />} />
         <Route path="/ref" element={<Ref />} />
         <Route path="/ref2" element={<Ref2 />} />
+        <Route path="/calculate" element={<Calculate />} />
+        <Route path="/memo" element={<Memo />} />
       </Routes>
     </div>
   );
