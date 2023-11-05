@@ -13,6 +13,8 @@ import Ref from "../pages/Ref";
 import Ref2 from "../pages/Ref2";
 import Calculate from "../pages/Calculate";
 import Memo from "../pages/Memo";
+import Callback from "../pages/Callback";
+import Callback2 from "../pages/Callback2";
 import { ThemeContext } from "../context/ThemeContext";
 
 const Content = () => {
@@ -32,7 +34,9 @@ const Content = () => {
         <Link to="/input2">Input2</Link> | <Link to="/input3">Input3</Link> | |{" "}
         <Link to="/list">UserList</Link> | <Link to="/time">Time</Link> |{" "}
         <Link to="/ref">Ref</Link> | <Link to="/Ref2">Ref2</Link> |{" "}
-        <Link to="/calculate">Calculate</Link> | <Link to="/Memo">Memo</Link>
+        <Link to="/calculate">Calculate</Link> | <Link to="/Memo">Memo</Link>|{" "}
+        <Link to="/callback">Callback</Link> |{" "}
+        <Link to="/Callback2">Callback2</Link>|{" "}
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -47,6 +51,8 @@ const Content = () => {
         <Route path="/ref2" element={<Ref2 />} />
         <Route path="/calculate" element={<Calculate />} />
         <Route path="/memo" element={<Memo />} />
+        <Route path="/callback" element={<Callback />} />
+        <Route path="/callback2" element={<Callback2 />} />
       </Routes>
     </div>
   );
