@@ -15,6 +15,7 @@ import Calculate from "../pages/Calculate";
 import Memo from "../pages/Memo";
 import Callback from "../pages/Callback";
 import Callback2 from "../pages/Callback2";
+import Rmemo from "../pages/Rmemo";
 import { ThemeContext } from "../context/ThemeContext";
 
 const Content = () => {
@@ -28,7 +29,7 @@ const Content = () => {
         color: isDark ? "white" : "black",
       }}
     >
-      <nav>
+      <nav style={{ paddingBottom: "20px" }}>
         <Link to="/">Home</Link> | <Link to="/about">About</Link> |{" "}
         <Link to="/counter">Counter</Link> | <Link to="/input">Input</Link> |{" "}
         <Link to="/input2">Input2</Link> | <Link to="/input3">Input3</Link> | |{" "}
@@ -36,7 +37,7 @@ const Content = () => {
         <Link to="/ref">Ref</Link> | <Link to="/Ref2">Ref2</Link> |{" "}
         <Link to="/calculate">Calculate</Link> | <Link to="/Memo">Memo</Link>|{" "}
         <Link to="/callback">Callback</Link> |{" "}
-        <Link to="/Callback2">Callback2</Link>|{" "}
+        <Link to="/callback2">Callback2</Link>| <Link to="/rmemo">Rmemo</Link>|{" "}
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -53,6 +54,7 @@ const Content = () => {
         <Route path="/memo" element={<Memo />} />
         <Route path="/callback" element={<Callback />} />
         <Route path="/callback2" element={<Callback2 />} />
+        <Route path="/rmemo" element={<Rmemo />} />
       </Routes>
     </div>
   );
